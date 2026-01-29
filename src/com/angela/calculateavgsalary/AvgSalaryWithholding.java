@@ -5,47 +5,6 @@ import java.util.Scanner;
 public class AvgSalaryWithholding {
     
     public static void main(String[] args) {
-        
-        // Pseudocode:
-
-        // START
-        //     DECLARATIONS
-        //          int weeklyGrossSalary
-        //          double taxAmount
-        //          double weeklyNetSalary
-    	//
-        //     CREATE Scanner input
-    	//
-    	//     PRINT user prompt to enter weekly salary amount
-    	//     READ weeklyGrossSalary 
-    	//
-        //     SET weeklyGrossSalary TO user input
-    	//     SET taxAmount TO calculated tax amount
-    	//     SET weeklyNetSalary TO calculated net salary after taxes withheld
-    	//
-    	//     IF weeklyGrossSalary < 500 THEN
-    	//			CALCULATE weeklyGrossSalary * 0.10
-    	//          CALCULATE weeklyGrossSalary - taxAmount
-    	//          PRINT taxAmount
-    	//          PRINT weeklyNetSalary
-    	//     ELSEIF weeklyGrossSalary >= 500 && weeklyGrossSalary < 1500 THEN
-    	//			CALCULATE weeklyGrossSalary * 0.15
-    	//          CALCULATE weeklyGrossSalary - taxAmount
-    	//          PRINT taxAmount
-    	//          PRINT weeklyNetSalary
-    	//     ELSEIF weeklyGrossSalary >= 1500 && weeklyGrossSalary < 2500 THEN
-    	//			CALCULATE weeklyGrossSalary * 0.20
-    	//          CALCULATE weeklyGrossSalary - taxAmount
-    	//          PRINT taxAmount
-    	//          PRINT weeklyNetSalary 
-        //	   ELSE 
-    	//          CALCULATE weeklyGrossSalary * 0.30
-    	//          CALCULATE weeklyGrossSalary - taxAmount
-    	//          PRINT taxAmount
-    	//          PRINT weeklyNetSalary
-    	//
-    	//     ENDSCANNER
-    	// END
 
         // Initialize project variables
         int weeklyGrossSalary;
@@ -92,3 +51,43 @@ public class AvgSalaryWithholding {
         input.close();
     }
 }
+
+
+// Pseudocode:
+
+// START
+//     DECLARATIONS
+//          int weeklyGrossSalary
+//          double taxAmount
+//          double weeklyNetSalary
+//
+//     CREATE Scanner object FOR user input
+//
+//     PRINT user prompt to enter weekly salary amount
+//     READ weeklyGrossSalary 
+//
+//     SET weeklyGrossSalary TO user input
+//
+//     IF weeklyGrossSalary < 500 THEN
+//			SET taxAmount = weeklyGrossSalary * 0.10
+//          SET weeklyNetSalary = weeklyGrossSalary - taxAmount
+//          PRINT taxAmount
+//          PRINT weeklyNetSalary
+//     ELSEIF weeklyGrossSalary >= 500 && weeklyGrossSalary < 1500 THEN
+//			SET taxAmount = weeklyGrossSalary * 0.15
+//          SET weeklyNetSalary = weeklyGrossSalary - taxAmount
+//          PRINT taxAmount
+//          PRINT weeklyNetSalary
+//     ELSEIF weeklyGrossSalary >= 1500 && weeklyGrossSalary < 2500 THEN
+//			SET taxAmount = weeklyGrossSalary * 0.20
+//          SET weeklyNetSalary = weeklyGrossSalary - taxAmount
+//          PRINT taxAmount
+//          PRINT weeklyNetSalary 
+//	   ELSE 
+//          SET taxAmount = weeklyGrossSalary * 0.30
+//          SET weeklyNetSalary = weeklyGrossSalary - taxAmount
+//          PRINT taxAmount
+//          PRINT weeklyNetSalary
+//
+//     ENDSCANNER
+// END
