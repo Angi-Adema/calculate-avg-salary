@@ -27,15 +27,23 @@ public class AvgSalaryWithholding {
         System.out.println("Please enter your weekly salary amount before tax withholding: ");
         weeklyGrossSalary = input.nextInt();
         
-        // Calculate tax and net salary based on gross salary amount
+        // Calculate tax amount withheld and net salary based on gross salary amount
         if (weeklyGrossSalary < 500) {
             taxAmount = weeklyGrossSalary * 0.10;
             weeklyNetSalary = weeklyGrossSalary - taxAmount;
+            System.out.printf("Tax Amount Withheld: %.2f%n", + taxAmount);
             System.out.printf("Weekly Net Salary: %.2f%n",  weeklyNetSalary);
-            
-        } else if (weeklyGrossSalary < 1500) {
+        } 
+        else if (weeklyGrossSalary < 1500) {
             taxAmount = weeklyGrossSalary * 0.15;
             weeklyNetSalary = weeklyGrossSalary - taxAmount;
+            System.out.printf("Tax Amount Withheld: %.2f%n", + taxAmount);
+            System.out.printf("Weekly Net Salary: %.2f%n",  weeklyNetSalary);
+        } 
+        else if (weeklyGrossSalary < 2500) {
+            taxAmount = weeklyGrossSalary * 0.20;
+            weeklyNetSalary = weeklyGrossSalary - taxAmount;
+            System.out.printf("Tax Amount Withheld: %.2f%n", + taxAmount);
             System.out.printf("Weekly Net Salary: %.2f%n",  weeklyNetSalary);
         }
 
