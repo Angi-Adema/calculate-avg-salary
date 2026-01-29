@@ -13,8 +13,39 @@ public class AvgSalaryWithholding {
         //          int weeklyGrossSalary
         //          double taxAmount
         //          double weeklyNetSalary
-        //          
-        //     SET
+    	//
+        //     CREATE Scanner input
+    	//
+    	//     PRINT user prompt to enter weekly salary amount
+    	//     READ weeklyGrossSalary 
+    	//
+        //     SET weeklyGrossSalary TO user input
+    	//     SET taxAmount TO calculated tax amount
+    	//     SET weeklyNetSalary TO calculated net salary after taxes withheld
+    	//
+    	//     IF weeklyGrossSalary < 500 THEN
+    	//			CALCULATE weeklyGrossSalary * 0.10
+    	//          CALCULATE weeklyGrossSalary - taxAmount
+    	//          PRINT taxAmount
+    	//          PRINT weeklyNetSalary
+    	//     ELSEIF weeklyGrossSalary >= 500 && weeklyGrossSalary < 1500 THEN
+    	//			CALCULATE weeklyGrossSalary * 0.15
+    	//          CALCULATE weeklyGrossSalary - taxAmount
+    	//          PRINT taxAmount
+    	//          PRINT weeklyNetSalary
+    	//     ELSEIF weeklyGrossSalary >= 1500 && weeklyGrossSalary < 2500 THEN
+    	//			CALCULATE weeklyGrossSalary * 0.20
+    	//          CALCULATE weeklyGrossSalary - taxAmount
+    	//          PRINT taxAmount
+    	//          PRINT weeklyNetSalary 
+        //	   ELSE 
+    	//          CALCULATE weeklyGrossSalary * 0.30
+    	//          CALCULATE weeklyGrossSalary - taxAmount
+    	//          PRINT taxAmount
+    	//          PRINT weeklyNetSalary
+    	//
+    	//     ENDSCANNER
+    	// END
 
         // Initialize project variables
         int weeklyGrossSalary;
